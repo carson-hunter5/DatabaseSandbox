@@ -69,5 +69,19 @@ INSERT INTO users
 INSERT INTO follows
     VALUES (NOW(),000320,0001008),
            (NOW(),0001008,000320),
-           (NOW(),0001008, 0001025)
+           (NOW(),0001008, 0001025);
+
+INSERT INTO photos
+    VALUES ('www.husky', 000320, NOW(), 7421),
+           ('www.gram', 0001008, NOW(), 7422),
+           ('www.Www', 000320, NOW(), 7423);
+
+INSERT INTO comments
+    VALUES ('Hello!',0001025,7422,NOW(),36),
+           (' hi college!',0001008,7422,NOW(),31),
+           ('Hello!',0001008,7423,NOW(),32);
+
+INSERT INTO likes
+    VALUES (NOW(),000320,7423)
+
 
