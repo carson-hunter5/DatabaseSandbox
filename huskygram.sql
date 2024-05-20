@@ -62,4 +62,12 @@ CREATE TABLE IF NOT EXISTS photo_tags (
 );
 
 INSERT INTO users
-    Values
+    VALUES ('carson_hunter', NOW(), 000320),
+           ('cam_hunter', NOW(), 0001025),
+           ('chris_hunter', NOW(), 0001008);
+
+INSERT INTO follows
+    VALUES (NOW(),000320,0001008),
+           (NOW(),0001008,000320),
+           (NOW(),0001008, 0001025)
+
