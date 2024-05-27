@@ -69,19 +69,41 @@ INSERT INTO users
 INSERT INTO follows
     VALUES (NOW(),000320,0001008),
            (NOW(),0001008,000320),
-           (NOW(),0001008, 0001025);
+           (NOW(),0001008, 0001025),
+           (NOW(), 000320, 0001025);
 
 INSERT INTO photos
     VALUES ('www.husky', 000320, NOW(), 7421),
            ('www.gram', 0001008, NOW(), 7422),
+           ('www.hey', 000320, NOW(), 7424),
            ('www.Www', 000320, NOW(), 7423);
 
 INSERT INTO comments
     VALUES ('Hello!',0001025,7422,NOW(),36),
            (' hi college!',0001008,7422,NOW(),31),
-           ('Hello!',0001008,7423,NOW(),32);
+           ('Hello!',0001008,7422,NOW(),32),
+           ('hbd!', 0001008, 7422, NOW(), 30);
 
 INSERT INTO likes
-    VALUES (NOW(),000320,7423)
+    VALUES (NOW(),000320,7423);
+
+INSERT INTO tags
+    VALUES ('Hi!', NOW(), 1),
+           ('Hey!', NOW(), 2),
+           ('Woah!', NOW(), 3),
+           ('Nice', NOW(), 4);
+
+INSERT INTO photo_tags
+    VALUES (7422,1),
+           (7422,2),
+           (7421,1),
+           (7423,1),
+           (7423,2),
+           (7424, 1),
+           (7422, 4),
+           (7423,4),
+           (7421,4);
+
+
 
 
